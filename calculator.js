@@ -1,25 +1,30 @@
 console.log("calculator connected");
 
 clicker = document.getElementById("calculate");
+resultD = document.getElementById("result-d");
+resultM = document.getElementById("result-m");
+resultY = document.getElementById("result-y");
 
 const date = new Date();
 currentD = date.getDate();
 currentM = date.getMonth()+1;
 currentY = date.getFullYear();
 
-const jan = 31;
+//done all as arrays for consistency with feb
+const jan = [31];
 const feb = [28, 29];
-const mar = 31;
-const apr = 30;
-const may = 31;
-const jun = 30;
-const jul = 31;
-const aug = 31;
-const sep = 30;
-const oct = 31;
-const nov = 30;
-const dec = 31;
+const mar = [31];
+const apr = [30];
+const may = [31];
+const jun = [30];
+const jul = [31];
+const aug = [31];
+const sep = [30];
+const oct = [31];
+const nov = [30];
+const dec = [31];
 
+const months = [jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec];
 
 
 clicker.addEventListener("click",() => {
@@ -52,6 +57,13 @@ clicker.addEventListener("click",() => {
     else{
         document.getElementById("year").classList.remove("error");
     }
+
+    const outputY = currentY-inputY;
+    const outputM = currentM-inputM;
+
+    resultY.innerHTML = outputY;
+    resultM.innerHTML = outputM;
+
 })
 
 console.log(`Date: ${currentD}, ${currentM}, ${currentY}`);
