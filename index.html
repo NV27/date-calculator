@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Date Calculator</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script defer src="calculator.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-200">
+
+<div class="mega max-w-[600px] mx-auto my-auto">
+    <div id="calculator">
+        <div class="inputs flex gap-[15px]">
+            <form>
+                <p>DAY</p>
+                <input type="text" value="DD" class="border-2 rounded max-w-[90px] h-[40px]">
+            </form>
+            <form>
+                <p>MONTH</p>
+                <input type="text" value="MM" class="border-2 rounded max-w-[90px] h-[40px]">
+            </form>
+            <form>
+                <p>YEAR</p>
+                <input type="text" value="YYYY" class="border-2 rounded max-w-[90px] h-[40px]">
+            </form>
+        </div>
+
+        <div class="weird-line">
+
+        </div>
+
+        <div class="results flex flex-col">
+            <div>
+                <b class="result-y text-6xl"> - - </b>
+                <b class="text-6xl">Years</b>
+            </div>
+            <div>
+                <b class="result-m text-6xl"> - - </b>
+                <b class="text-6xl">Months</b>
+            </div>
+            <div>
+                <b class="result-d text-6xl"> - - </b>
+                <b class="text-6xl">Days</b>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
