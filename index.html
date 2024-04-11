@@ -20,34 +20,34 @@
                     </form>
                     <form class="flex flex-col">
                         <label>MONTH</label>
-                        <input type="text" placeholder="MM" class="border-2 rounded max-w-[90px] h-[40px] p-[10px] font-bold focus:border-purple-500">
+                        <input id="month" type="text" placeholder="MM" class="border-2 rounded max-w-[90px] h-[40px] p-[10px] font-bold focus:border-purple-500">
                     </form>
                     <form class="flex flex-col">
                         <label>YEAR</label>
-                        <input type="text" placeholder="YYYY" class="border-2 rounded max-w-[90px] h-[40px] p-[10px] font-bold focus:border-purple-500">
+                        <input id="year" type="text" placeholder="YYYY" class="border-2 rounded max-w-[90px] h-[40px] p-[10px] font-bold focus:border-purple-500">
                     </form>
                 </div>
             </div>
 
             <div class="results flex flex-col mt-[30px]">
                 <div>
-                    <i class="result-y text-6xl text-purple-500 font-bold"> - - </i>
-                    <i class="text-6xl font-bold">Years</i>
+                    <i class="result-y text-6xl text-purple-500 font-black"> - - </i>
+                    <i class="text-6xl font-black">Years</i>
                 </div>
                 <div>
-                    <i class="result-m text-6xl text-purple-500 font-bold"> - - </i>
-                    <i class="text-6xl font-bold">Months</i>
+                    <i class="result-m text-6xl text-purple-500 font-black"> - - </i>
+                    <i class="text-6xl font-black">Months</i>
                 </div>
                 <div>
-                    <i class="result-d text-6xl text-purple-500 font-bold"> - - </i>
-                    <i class="text-6xl font-bold">Days</i>
+                    <i id="result-d" class="result-d text-6xl text-purple-500 font-black"> - - </i>
+                    <i class="text-6xl font-black">Days</i>
                 </div>
                 
             </div>
         </div>
 
         <div class="right">
-            <button class="calculate bg-purple-500 rounded-full h-[70px] w-[70px] mt-[60px]"></button>
+            <button id="calculate" class="calculate bg-purple-500 rounded-full h-[70px] w-[70px] mt-[60px]"></button>
         </div>
     </div>
 </div>
